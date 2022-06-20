@@ -113,8 +113,8 @@ def main():
                 # データフレームの読み込み
                 df = pd.read_csv(uploaded_file, encoding=enc) 
 
-                # ary_cnt = ["10", "50", "100", ]
-                # cnt = st.sidebar.selectbox("Select Max mm", ary_cnt)
+                ary_cnt = ["10", "50", "100", ]
+                cnt = st.sidebar.selectbox("Select Max mm", ary_cnt)
                 cnt = st.sidebar.slider('表示する件数', 1, len(df), 10)
 
                 # テーブルの表示
